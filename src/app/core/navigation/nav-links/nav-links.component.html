@@ -1,0 +1,13 @@
+<!-- Liens pour Desktop -->
+<ul  class="hidden space-x-6 text-sm font-medium lg:flex nav-content">
+
+    @for (link of links2; track link.path) {
+        <li>
+            <a [routerLink]=" link.path" class="nav-link">
+                {{ link.label }}
+            </a>
+        </li>
+    }
+    
+</ul>
+

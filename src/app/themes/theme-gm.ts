@@ -10,6 +10,13 @@ const ThemeGm = definePreset(Aura, {
             labelFontWeight: 'bold',
             
         },
+       
+        // menubar: {
+        //     background: 'transparent',
+        //     padding: '1rem',
+        //     itemPadding: '2rem',
+        //     itemActiveBackground: '#d1ff66',
+        // },
     },
     semantic: {
         primary: {
