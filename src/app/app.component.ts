@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { Menubar } from 'primeng/menubar';
 import { NavbarComponent } from "./core/navigation/navbar.component";
 
 
@@ -14,7 +13,6 @@ import { NavbarComponent } from "./core/navigation/navbar.component";
     NavbarComponent
 ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'guildmanager-ng';
