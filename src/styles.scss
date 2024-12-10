@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+
+@layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+:root {
+  --common-color-black: #0f161b;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+	width: 100dvw;
+  background-color: var(--common-color-black);
+  overflow-x: hidden;
+	height: 2500px;
+}
+
+@layer base {
+	@font-face {
+		font-family: 'circular-web';
+		src: url('./assets/fonts/circularweb-book.woff2') format('woff');
+	}
+
+	@font-face {
+		font-family: 'general';
+		src: url('./assets/fonts/general.woff2') format('woff');
+	}
+
+	@font-face {
+		font-family: 'robert-medium';
+		src: url('./assets/fonts/robert-medium.woff2') format('woff');
+	}
+
+	@font-face {
+		font-family: 'robert-regular';
+		src: url('./assets/fonts/robert-regular.woff2') format('woff');
+	}
+
+	@font-face {
+		font-family: 'gm';
+		src: url('./assets/fonts/gm-regular.woff2') format('woff');
+	}
+ 
+}
+
+@layer utilities {
+    
+}
+
+
+
+
+.gm-header {
+	@apply absolute top-5 left-10 right-10  ;
+	background-color: #00000085;
+	backdrop-filter: blur(20px);
+}
+
+.nav-content {
+	@apply bg-black rounded-full p-5;
+	
+}
+
+
+.nav-link {
+	@apply text-white hover:text-primary font-sans text-sm uppercase hover:bg-primary-700 transition-all ease-in cursor-pointer px-4 py-2 rounded-xl ;
+}
